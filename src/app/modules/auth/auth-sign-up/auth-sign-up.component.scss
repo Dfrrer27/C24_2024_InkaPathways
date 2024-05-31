@@ -1,0 +1,26 @@
+.sign-up-content {
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 100px 50px;
+}
+
+.content-grid{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 100px;
+}
+
+.row3{
+
+  button {
+    margin: 40px 0;
+  }
+}

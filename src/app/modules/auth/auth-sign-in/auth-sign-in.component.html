@@ -1,0 +1,28 @@
+
+  <div>
+    <form [formGroup]="form" (ngSubmit)="loginUser()">
+      <h1>inicio de sesión!</h1>
+
+      <div>
+        <label>Usuario:</label>
+        <input type="text" placeholder="Min. 6 carácteres" autocomplete="off" formControlName="username" required>
+      </div>
+
+      <div>
+        <label>Contraseña:</label>
+        <input type="text" placeholder="Example_23" autocomplete="off" formControlName="password" required>
+      </div>
+
+      <button
+        type="submit"
+        >
+        Ingresar
+      </button>
+
+      <p>No tienes cuenta? <a routerLink="/auth/sign-up">Registrar</a></p>
+    </form>
+  </div>
+
+
+
+

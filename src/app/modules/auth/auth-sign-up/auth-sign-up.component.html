@@ -1,0 +1,61 @@
+<div class="sign-up-content">
+  <form [formGroup]="form" (ngSubmit)="addUser()">
+    <h1>REGISTRARSE</h1>
+
+    <div class="form-content">
+      <div class="content-grid">
+        <div class="row-1">
+
+          <div>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Min. 6 carácteres" autocomplete="off" formControlName="username" required>
+          </div>
+
+          <div>
+            <label>Gmail:</label>
+            <input type="email" placeholder="Min. 6 carácteres" autocomplete="off" formControlName="username" required>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div>
+            <label>Apellido:</label>
+            <input type="text" placeholder="Min. 6 carácteres" autocomplete="off" formControlName="username" required>
+          </div>
+
+          <div>
+            <label>Selecciona tu región:</label>
+            <select name="regiones" id="region">
+              <option value="Lima ">Lima </option>
+              <option value="Huancayo">Huancayo</option>
+              <option value="Trujillo">Trujillo</option>
+              <option value="Huancavelica">Huancavelica</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row3">
+        <div>
+          <label>Contraseña:</label>
+          <input type="text" placeholder="Example_23" autocomplete="off" formControlName="password" required>
+        </div>
+
+        <div>
+          <label>Confirmar Contraseña:</label>
+          <input type="text" placeholder="Example_23" autocomplete="off" formControlName="password" required>
+        </div>
+
+        <button
+          type="submit"
+        >
+          Ingresar
+        </button>
+
+      </div>
+    </div>
+
+
+    <p>No tienes cuenta? <a routerLink="/auth/sign-in">Iniciar Sesión</a></p>
+  </form>
+</div>
